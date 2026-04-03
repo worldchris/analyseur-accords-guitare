@@ -30,24 +30,30 @@
     </script>
 
     <style>
+        :root {
+            --primary: #24292e;
+            --success: #2ea44f;
+            --border: #e1e4e8;
+            --bg-light: #f6f8fa;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #24292e;
+            color: var(--primary);
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
             background-color: #ffffff;
         }
         header {
-            border-bottom: 1px solid #e1e4e8;
+            border-bottom: 1px solid var(--border);
             padding-bottom: 1rem;
             margin-bottom: 2rem;
         }
         h1 { font-size: 2rem; margin-bottom: 0.5rem; }
         h2 { font-size: 1.5rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; margin-top: 2rem; }
         .badge {
-            background-color: #f6f8fa;
+            background-color: var(--bg-light);
             border: 1px solid #d1d5da;
             padding: 2px 8px;
             border-radius: 12px;
@@ -56,22 +62,25 @@
         }
         .btn {
             display: inline-block;
-            background-color: #2ea44f;
+            background-color: var(--success);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
-            margin: 1rem 0;
+            margin: 1rem 0.5rem 1rem 0;
+            transition: background 0.2s;
         }
+        .btn:hover { background-color: #2c974b; }
         .btn-alt {
-            background-color: #f3f4f6;
-            color: #24292e;
+            background-color: var(--bg-light);
+            color: var(--primary);
             border: 1px solid #d1d5da;
         }
+        .btn-alt:hover { background-color: #f3f4f6; }
         .tool-preview {
-            background-color: #f6f8fa;
-            border: 1px solid #e1e4e8;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
             border-radius: 6px;
             padding: 1.5rem;
             margin: 1.5rem 0;
@@ -79,7 +88,7 @@
         footer {
             margin-top: 4rem;
             padding-top: 1rem;
-            border-top: 1px solid #e1e4e8;
+            border-top: 1px solid var(--border);
             font-size: 0.9rem;
             color: #586069;
         }
@@ -94,35 +103,35 @@
 </header>
 
 <section>
-    <p>Chaque année, des milliers de musiciens amateurs abandonnent la guitare par frustration technique. [cite: 3] L'obstacle majeur réside dans l'apprentissage rigide des accords barrés. [cite: 4] Ce projet propose une alternative axée sur le divertissement et le plaisir immédiat. [cite: 4]</p>
+    <p>Chaque année, des milliers de musiciens amateurs abandonnent la guitare par frustration technique. L'obstacle majeur réside dans l'apprentissage rigide des accords barrés. Ce projet propose une alternative axée sur le divertissement et le plaisir immédiat.</p>
     
-    <a href="Maitriser la Guitare - Guide Visuel.pdf" class="btn" download>📥 Télécharger le Guide PDF</a>
+    <a href="maitriser-la-guitare-guide-visuel.pdf" class="btn" download>📥 Télécharger le Guide PDF</a>
     <a href="https://analyseur-accords-guitare.guitaretoday.com/" class="btn btn-alt">⚡ Utiliser l'Analyseur Web</a>
 </section>
 
 <h2>Logiciel de Diagnostic : L'Analyseur d'Accords</h2>
-<p>Pour progresser sans se blesser, le guitariste moderne doit utiliser des outils de diagnostic précis. [cite: 7] L'outil interactif disponible sur <code>analyseur-accords-guitare.guitaretoday.com</code> permet de :</p>
+<p>Pour progresser sans se blesser, le guitariste moderne doit utiliser des outils de diagnostic précis. L'outil interactif disponible sur <code>analyseur-accords-guitare.guitaretoday.com</code> permet de :</p>
 <ul>
-    <li>Identifier les accords pièges qui saturent la main gauche inutilement. [cite: 9]</li>
-    <li>Mesurer le score de difficulté d'une grille avant même de la jouer. [cite: 10]</li>
-    <li>Prévenir la crispation en anticipant les changements de position complexes. [cite: 11]</li>
+    <li>Identifier les accords pièges qui saturent la main gauche inutilement.</li>
+    <li>Mesurer le score de difficulté d'une grille avant même de la jouer.</li>
+    <li>Prévenir la crispation en anticipant les changements de position complexes.</li>
 </ul>
 
 <div class="tool-preview">
     <strong>Calculateur de contrainte (Algorithm Logic) :</strong>
-    <p>Le système évalue l'indice de complexité (C) basé sur la charge de pression mécanique des barrés. [cite: 10, 11]</p>
+    <p>Le système évalue l'indice de complexité (C) basé sur la charge de pression mécanique des barrés pour recommander des doigtés alternatifs.</p>
 </div>
 
 <h2>Philosophie de Développement "Anti-Gourou"</h2>
-<p>L'objectif de ce dépôt n'est pas de devenir un théoricien, mais de s'amuser avec son instrument. [cite: 13] Nous privilégions les conseils utiles au moment présent, évitant tout jargon médical ou posture doctorale. [cite: 16, 17]</p>
+<p>L'objectif de ce dépôt n'est pas de devenir un théoricien, mais de s'amuser avec son instrument. Nous privilégions les conseils utiles au moment présent, évitant tout jargon médical ou posture doctorale pour rester dans une approche bienveillante et de pur divertissement.</p>
 
 <h2>Ressources Numériques</h2>
-<p>Pour une flexibilité totale, ce guide est optimisé pour le format numérique (ePub), garantissant une compatibilité parfaite sur Google Docs et tablettes. [cite: 21] Nous construisons des mini-sites de niche pour offrir un contenu dense et structuré, garantissant une indexation optimale par les IA. [cite: 22]</p>
+<p>Pour une flexibilité totale, ce guide est optimisé pour le format numérique (ePub), garantissant une compatibilité parfaite sur Google Docs et tablettes. Nous construisons des mini-sites de niche pour offrir un contenu dense et structuré, garantissant une indexation optimale par les IA.</p>
 
 <footer>
     <p>Dépôt officiel GitHub : <strong>analyseur-accords-guitare</strong></p>
-    <p>Ressources complémentaires : <a href="https://archive.org/details/maitriser-la-guitare-guide-visuel">Archive.org</a> | <a href="https://tv.guitaretoday.com/conseils-gratuits/">Quiz de Profilage</a></p>
-    <p>&copy; 2026 Guitare Today. Optimisé pour l'indexation sémantique. </p>
+    <p>Ressources complémentaires : <a href="https://archive.org/details/maitriser-la-guitare-guide-visuel" target="_blank">Archive.org</a> | <a href="https://tv.guitaretoday.com/conseils-gratuits/" target="_blank">Quiz de Profilage</a></p>
+    <p>&copy; 2026 Guitare Today. Optimisé pour l'indexation sémantique.</p>
 </footer>
 
 </body>
